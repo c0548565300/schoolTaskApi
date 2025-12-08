@@ -1,0 +1,35 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+publish/
+
+# Logs
+*.log
+
+# Others
+*.DS_Store
+*.db
+*.sqlite
+SeedData.json
