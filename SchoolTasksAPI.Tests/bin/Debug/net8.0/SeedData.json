@@ -1,0 +1,48 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice Cohen",
+      "email": "alice@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "David Levy",
+      "email": "david@example.com",
+      "status": "Active"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dr. Ben Levi",
+      "email": "ben@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Prof. Sara Gold",
+      "email": "sara@example.com",
+      "status": "Active"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "title": "Math Homework 1",
+      "description": "Complete exercises 1-10",
+      "teacherId": 1,
+      "status": "NotSubmitted",
+      "grade": null
+    },
+    {
+      "id": 2,
+      "title": "History Project",
+      "description": "Write a report on WWII",
+      "teacherId": 2,
+      "status": "NotSubmitted",
+      "grade": null
+    }
+  ]
+}

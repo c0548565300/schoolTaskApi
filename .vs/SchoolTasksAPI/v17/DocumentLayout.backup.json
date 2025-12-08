@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}|SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi.tests\\studentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}|SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj|solutionrelative:schooltasksapi.tests\\studentscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}|SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi.tests\\schooltasksapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}|SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj|solutionrelative:schooltasksapi.tests\\schooltasksapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|c:\\users\\123\\desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\schooltasksapi\\schooltasksapi\\entities\\studen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C238B65-1EE6-413E-835B-F165BA06895A}|SchoolTasksAPI\\SchoolTasksAPI.csproj|solutionrelative:schooltasksapi\\entities\\studen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI.Tests\\StudentsControllerTests.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI.Tests\\StudentsControllerTests.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI.Tests\\StudentsControllerTests.cs",
+              "RelativeToolTip": "SchoolTasksAPI.Tests\\StudentsControllerTests.cs",
+              "ViewState": "AgIAAAsAAAAAzszMzMwrwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:05:47.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SchoolTasksAPI.Tests",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj",
+              "RelativeDocumentMoniker": "SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj",
+              "RelativeToolTip": "SchoolTasksAPI.Tests\\SchoolTasksAPI.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-08T23:05:26.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Data\\DataContext.cs",
+              "RelativeToolTip": "SchoolTasksAPI\\Data\\DataContext.cs",
+              "ViewState": "AgIAABUAAABAmJmZmZkuwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:59:08.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssignmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\AssignmentsController.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\Controllers\\AssignmentsController.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\AssignmentsController.cs",
+              "RelativeToolTip": "SchoolTasksAPI\\Controllers\\AssignmentsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA3wEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:02:12.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\Controllers\\TeachersController.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "SchoolTasksAPI\\Controllers\\TeachersController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:00:40.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "SchoolTasksAPI\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:01:40.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\.gitignore",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\.gitignore",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\.gitignore",
+              "RelativeToolTip": "SchoolTasksAPI\\.gitignore",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-08T22:18:57.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\.gitignore",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\.gitignore",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\.gitignore",
+              "RelativeToolTip": "SchoolTasksAPI\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-08T22:18:21.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Studen.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Entities\\Studen.cs",
+              "RelativeDocumentMoniker": "SchoolTasksAPI\\Entities\\Studen.cs",
+              "ToolTip": "C:\\Users\\123\\Desktop\\\u05D7\u05E0\u05D9 \u05E9\u05D1\\bruk\\.net\\SchoolTasksAPI\\SchoolTasksAPI\\Entities\\Studen.cs",
+              "RelativeToolTip": "SchoolTasksAPI\\Entities\\Studen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:49:37.838Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

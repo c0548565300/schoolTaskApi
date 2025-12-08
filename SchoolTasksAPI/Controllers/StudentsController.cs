@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using System.IO;
+using SchoolTasksAPI.Data; // חובה להוסיף כדי להכיר את DataContext
 using SchoolTasksAPI.Entities;
+using System.Linq;
 
 namespace SchoolTasksAPI.Controllers
 {
@@ -11,30 +9,21 @@ namespace SchoolTasksAPI.Controllers
     [Route("api/[controller]")]
     public class StudentsController : ControllerBase
     {
-        // שדה סטטי לשמירת התלמידים
-        private static List<Student> Students = new List<Student>();
-
-        // קונסטרקטור - טוען נתונים התחלתיים אם הרשימה ריקה
-        public StudentsController()
-        {
-            if (!Students.Any())
-            {
-                var jsonData = System.IO.File.ReadAllText("SeedData.json");
-                var doc = JsonDocument.Parse(jsonData);
-                var studentsJson = doc.RootElement.GetProperty("students");
-                Students = JsonSerializer.Deserialize<List<Student>>(studentsJson.GetRawText());
-            }
-        }
+        // יצירת מופע של DataContext שמחזיק את הנתונים
+        private readonly DataContext _context = new DataContext();
 
         // GET api/students
         [HttpGet]
-        public IActionResult GetAll() => Ok(Students);
+        public IActionResult GetAll()
+        {
+            return Ok(_context.Students);
+        }
 
         // GET api/students/{id}
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var student = Students.FirstOrDefault(s => s.Id == id);
+            var student = _context.Students.FirstOrDefault(s => s.Id == id);
             if (student == null) return NotFound();
             return Ok(student);
         }
@@ -43,8 +32,10 @@ namespace SchoolTasksAPI.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] Student student)
         {
-            student.Id = Students.Count > 0 ? Students.Max(s => s.Id) + 1 : 1;
-            Students.Add(student);
+            // יצירת ID חדש
+            student.Id = _context.Students.Count > 0 ? _context.Students.Max(s => s.Id) + 1 : 1;
+
+            _context.Students.Add(student);
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
 
@@ -52,11 +43,13 @@ namespace SchoolTasksAPI.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] Student student)
         {
-            var existing = Students.FirstOrDefault(s => s.Id == id);
+            var existing = _context.Students.FirstOrDefault(s => s.Id == id);
             if (existing == null) return NotFound();
+
             existing.Name = student.Name;
             existing.Email = student.Email;
             existing.Status = student.Status;
+
             return Ok(existing);
         }
 
@@ -64,9 +57,10 @@ namespace SchoolTasksAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var existing = Students.FirstOrDefault(s => s.Id == id);
+            var existing = _context.Students.FirstOrDefault(s => s.Id == id);
             if (existing == null) return NotFound();
-            Students.Remove(existing);
+
+            _context.Students.Remove(existing);
             return NoContent();
         }
 
@@ -74,8 +68,9 @@ namespace SchoolTasksAPI.Controllers
         [HttpPut("{id}/status")]
         public IActionResult UpdateStatus(int id, [FromBody] string status)
         {
-            var student = Students.FirstOrDefault(s => s.Id == id);
+            var student = _context.Students.FirstOrDefault(s => s.Id == id);
             if (student == null) return NotFound();
+
             student.Status = status;
             return Ok(student);
         }
