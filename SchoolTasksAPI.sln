@@ -5,7 +5,13 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolTasksAPI", "SchoolTasksAPI\SchoolTasksAPI.csproj", "{0C238B65-1EE6-413E-835B-F165BA06895A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTasksAPI.Tests", "SchoolTasksAPI.Tests\SchoolTasksAPI.Tests.csproj", "{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolTasksAPI.Tests", "SchoolTasksAPI.Tests\SchoolTasksAPI.Tests.csproj", "{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTasks.Data", "SchoolTasks.Data\SchoolTasks.Data.csproj", "{24EC4077-1DB3-4591-9141-3A68BCD70184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTasks.Core", "SchoolTasks.Core\SchoolTasks.Core.csproj", "{06747DC6-E054-4FF6-93F6-D934F42C2CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolTasks.Service", "SchoolTasks.Service\SchoolTasks.Service.csproj", "{2B677948-59B2-47B2-995C-8A4C2A0A4DB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669EFBC2-EA5C-4C9B-9043-9EE3D89140A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EC4077-1DB3-4591-9141-3A68BCD70184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EC4077-1DB3-4591-9141-3A68BCD70184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EC4077-1DB3-4591-9141-3A68BCD70184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EC4077-1DB3-4591-9141-3A68BCD70184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06747DC6-E054-4FF6-93F6-D934F42C2CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06747DC6-E054-4FF6-93F6-D934F42C2CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06747DC6-E054-4FF6-93F6-D934F42C2CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06747DC6-E054-4FF6-93F6-D934F42C2CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B677948-59B2-47B2-995C-8A4C2A0A4DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B677948-59B2-47B2-995C-8A4C2A0A4DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B677948-59B2-47B2-995C-8A4C2A0A4DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B677948-59B2-47B2-995C-8A4C2A0A4DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

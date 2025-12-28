@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SchoolTasksAPI.Data; // חובה להוסיף כדי להכיר את DataContext
-using SchoolTasksAPI.Entities;
-using System.Linq;
+using SchoolTasks.Core.Entities;
+using SchoolTasks.Core.Services;
+using System.Collections.Generic;
 
 namespace SchoolTasksAPI.Controllers
 {
@@ -9,70 +9,58 @@ namespace SchoolTasksAPI.Controllers
     [Route("api/[controller]")]
     public class StudentsController : ControllerBase
     {
-        // יצירת מופע של DataContext שמחזיק את הנתונים
-        private readonly DataContext _context = new DataContext();
+        // המשתנה שיחזיק את ה-Service
+        private readonly IStudentService _studentService;
 
-        // GET api/students
-        [HttpGet]
-        public IActionResult GetAll()
+        // הזרקת ה-Service דרך הבנאי (Constructor Injection)
+        public StudentsController(IStudentService studentService)
         {
-            return Ok(_context.Students);
+            _studentService = studentService;
         }
 
-        // GET api/students/{id}
-        [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        [HttpGet]
+        public ActionResult<IEnumerable<Student>> GetAll()
         {
-            var student = _context.Students.FirstOrDefault(s => s.Id == id);
+            return Ok(_studentService.GetList());
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Student> GetById(int id)
+        {
+            var student = _studentService.GetById(id);
             if (student == null) return NotFound();
             return Ok(student);
         }
 
-        // POST api/students
         [HttpPost]
-        public IActionResult Create([FromBody] Student student)
+        public ActionResult Create([FromBody] Student student)
         {
-            // יצירת ID חדש
-            student.Id = _context.Students.Count > 0 ? _context.Students.Max(s => s.Id) + 1 : 1;
-
-            _context.Students.Add(student);
-            return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
+            var newStudent = _studentService.Add(student);
+            return CreatedAtAction(nameof(GetById), new { id = newStudent.Id }, newStudent);
         }
 
-        // PUT api/students/{id}
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] Student student)
+        public ActionResult Update(int id, [FromBody] Student student)
         {
-            var existing = _context.Students.FirstOrDefault(s => s.Id == id);
-            if (existing == null) return NotFound();
-
-            existing.Name = student.Name;
-            existing.Email = student.Email;
-            existing.Status = student.Status;
-
-            return Ok(existing);
+            var updatedStudent = _studentService.Update(id, student);
+            if (updatedStudent == null) return NotFound();
+            return Ok(updatedStudent);
         }
 
-        // DELETE api/students/{id}
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public ActionResult Delete(int id)
         {
-            var existing = _context.Students.FirstOrDefault(s => s.Id == id);
-            if (existing == null) return NotFound();
-
-            _context.Students.Remove(existing);
+            var result = _studentService.Delete(id);
+            if (!result) return NotFound();
             return NoContent();
         }
 
-        // PUT api/students/{id}/status
         [HttpPut("{id}/status")]
-        public IActionResult UpdateStatus(int id, [FromBody] string status)
+        public ActionResult UpdateStatus(int id, [FromBody] string status)
         {
-            var student = _context.Students.FirstOrDefault(s => s.Id == id);
-            if (student == null) return NotFound();
-
-            student.Status = status;
-            return Ok(student);
+            var updatedStudent = _studentService.UpdateStatus(id, status);
+            if (updatedStudent == null) return NotFound();
+            return Ok(updatedStudent);
         }
     }
 }

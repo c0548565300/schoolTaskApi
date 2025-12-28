@@ -1,0 +1,16 @@
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\bin\Debug\net8.0\SchoolTasks.Service.deps.json
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\bin\Debug\net8.0\SchoolTasks.Service.dll
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\bin\Debug\net8.0\SchoolTasks.Service.pdb
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\bin\Debug\net8.0\SchoolTasks.Core.dll
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\bin\Debug\net8.0\SchoolTasks.Core.pdb
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.csproj.AssemblyReference.cache
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.AssemblyInfoInputs.cache
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.AssemblyInfo.cs
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.csproj.CoreCompileInputs.cache
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.sourcelink.json
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTa.51BA1916.Up2Date
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.dll
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\refint\SchoolTasks.Service.dll
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\SchoolTasks.Service.pdb
+C:\Users\123\Desktop\חני שב\bruk\.net\SchoolTasksAPI\SchoolTasks.Service\obj\Debug\net8.0\ref\SchoolTasks.Service.dll

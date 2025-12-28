@@ -1,4 +1,4 @@
-﻿namespace SchoolTasksAPI.Entities
+﻿namespace SchoolTasks.Core.Entities
 {
     public class Teacher
     {

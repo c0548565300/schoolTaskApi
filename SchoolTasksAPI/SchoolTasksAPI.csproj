@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolTasks.Core\SchoolTasks.Core.csproj" />
+    <ProjectReference Include="..\SchoolTasks.Data\SchoolTasks.Data.csproj" />
+    <ProjectReference Include="..\SchoolTasks.Service\SchoolTasks.Service.csproj" />
   </ItemGroup>
 
 </Project>

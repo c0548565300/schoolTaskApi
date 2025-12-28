@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SchoolTasksAPI.Data; // חובה
-using SchoolTasksAPI.Entities;
-using System.Linq;
+using SchoolTasks.Core.Entities;
+using SchoolTasks.Core.Services;
+using System.Collections.Generic;
 
 namespace SchoolTasksAPI.Controllers
 {
@@ -9,59 +9,51 @@ namespace SchoolTasksAPI.Controllers
     [Route("api/[controller]")]
     public class TeachersController : ControllerBase
     {
-        // שימוש ב-DataContext במקום רשימה סטטית
-        private readonly DataContext _context = new DataContext();
+        private readonly ITeacherService _teacherService;
 
-        [HttpGet]
-        public IActionResult GetAll() => Ok(_context.Teachers);
+        public TeachersController(ITeacherService teacherService)
+        {
+            _teacherService = teacherService;
+        }
+
+        [HttpGet] public ActionResult<IEnumerable<Teacher>> GetAll() => Ok(_teacherService.GetList());
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public ActionResult<Teacher> GetById(int id)
         {
-            var teacher = _context.Teachers.FirstOrDefault(t => t.Id == id);
+            var teacher = _teacherService.GetById(id);
             if (teacher == null) return NotFound();
             return Ok(teacher);
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Teacher teacher)
+        public ActionResult Create([FromBody] Teacher teacher)
         {
-            teacher.Id = _context.Teachers.Count > 0 ? _context.Teachers.Max(t => t.Id) + 1 : 1;
-            _context.Teachers.Add(teacher);
-            return CreatedAtAction(nameof(GetById), new { id = teacher.Id }, teacher);
+            var newTeacher = _teacherService.Add(teacher);
+            return CreatedAtAction(nameof(GetById), new { id = newTeacher.Id }, newTeacher);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] Teacher teacher)
+        public ActionResult Update(int id, [FromBody] Teacher teacher)
         {
-            var existing = _context.Teachers.FirstOrDefault(t => t.Id == id);
-            if (existing == null) return NotFound();
-
-            existing.Name = teacher.Name;
-            existing.Email = teacher.Email;
-            existing.Status = teacher.Status;
-
-            return Ok(existing);
+            var updated = _teacherService.Update(id, teacher);
+            if (updated == null) return NotFound();
+            return Ok(updated);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public ActionResult Delete(int id)
         {
-            var existing = _context.Teachers.FirstOrDefault(t => t.Id == id);
-            if (existing == null) return NotFound();
-
-            _context.Teachers.Remove(existing);
+            if (!_teacherService.Delete(id)) return NotFound();
             return NoContent();
         }
 
         [HttpPut("{id}/status")]
-        public IActionResult UpdateStatus(int id, [FromBody] string status)
+        public ActionResult UpdateStatus(int id, [FromBody] string status)
         {
-            var teacher = _context.Teachers.FirstOrDefault(t => t.Id == id);
-            if (teacher == null) return NotFound();
-
-            teacher.Status = status;
-            return Ok(teacher);
+            var updated = _teacherService.UpdateStatus(id, status);
+            if (updated == null) return NotFound();
+            return Ok(updated);
         }
     }
 }
